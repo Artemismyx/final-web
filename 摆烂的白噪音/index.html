@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF   8">
+    <meta http   equiv="X   UA   Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device   width, initial   scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/utils.css">
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title" style="font-size: 131px;">
+                摆烂的白噪音
+            </h1>
+            <div class="textBox">
+                <p class="x">   项目概念</p>
+                <p class="x">   概念图</p>
+                <p class="x">   过程图</p>
+                <p class="x">   可视化图谱</p>
+                <p class="x">   全图</p>
+                <p class="x">   细节图</p>
+               
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="项目概念/调研_01.png" alt="" srcset="">
+                <img src="项目概念/调研_02.png" alt="" srcset="">
+                <img src="项目概念/调研_03.png" alt="" srcset="">
+                <img src="项目概念/调研_04.png" alt="" srcset="">
+                <img src="项目概念/调研_05.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="作品成图/概念图/1.png" alt="" srcset="">
+                <img src="作品成图/概念图/2.png" alt="" srcset="">
+                <img src="作品成图/概念图/3.png" alt="" srcset="">
+                <img src="作品成图/概念图/4.png" alt="" srcset="">
+                <img src="作品成图/概念图/5.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="作品成图/过程图/1.png" alt="" srcset="">
+                <img src="作品成图/过程图/2.png" alt="" srcset="">
+                <img src="作品成图/过程图/3.png" alt="" srcset="">
+                <img src="作品成图/过程图/4.png" alt="" srcset="">
+                <img src="作品成图/过程图/5.png" alt="" srcset="">
+                <img src="作品成图/过程图/6.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="作品成图/可视化图谱/可视化图谱.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="作品成图/全图/1.png" alt="" srcset="">
+                <img src="作品成图/全图/2.png" alt="" srcset="">
+                <img src="作品成图/全图/3.png" alt="" srcset="">
+                <img src="作品成图/全图/4.png" alt="" srcset="">
+                <img src="作品成图/全图/5.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="作品成图/细节图/1.png" alt="" srcset="">
+                <img src="作品成图/细节图/2.png" alt="" srcset="">
+                <img src="作品成图/细节图/3.png" alt="" srcset="">
+                <img src="作品成图/细节图/4.png" alt="" srcset="">
+                <img src="作品成图/细节图/5.png" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '   项目概念') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '   概念图') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '   过程图') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '   可视化图谱') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '   全图') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '   细节图') {
+                    divBox[5].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
